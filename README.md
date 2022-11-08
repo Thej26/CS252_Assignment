@@ -1,4 +1,4 @@
-# CS252_assignment
+# CS252_Assignment
 This repository contains solutions of Problem 2.24 and 3.19 from the textbook Operating System Concepts 10th Edition by Abraham Silberschatz, Peter Baer Galvin and Greg Gagne.
 
 • Name     : Thejaswi.N    
@@ -8,7 +8,7 @@ This repository contains solutions of Problem 2.24 and 3.19 from the textbook Op
 ---
 
 
-# Problem 2.24 
+# **[Question 1: 2.24](https://github.com/Thej26/CS252_assignment/tree/main/2.24)**
 
 ### Statement
 
@@ -26,7 +26,7 @@ Since Windows systems do not provide such a tool, you will have to trace through
 ---
 
 
-# Problem 3.19
+# **[Question 2: 3.19](https://github.com/Thej26/CS252_assignment/tree/main/3.19)**
 
 ### Statement
 
@@ -64,7 +64,7 @@ For IPC between the child and parent processes, the contents of the shared memor
 ---
 
 
-# REFERENCES
+# References
 https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md
 
 https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252
@@ -72,7 +72,9 @@ https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252
 
 ---
 
-AUTHOR
+# Author
 
-@Thej.26
+**[@Thej26](https://github.com/Thej26)**
+
+
 
