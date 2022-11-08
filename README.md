@@ -89,6 +89,8 @@ the parent thread will output the values once the workers have exited.
 that determine other statistical values, such as median and standard
 deviation.)
 
+---
+
 
 # References
 https://github.com/ResearchComputing/Documentation/blob/main/docs/programming/OpenMP-C.md
