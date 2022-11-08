@@ -48,15 +48,15 @@ P-8 Chapter 3 Processes The first version will have the child process write the 
 
 The second version will use a pipe. The child will write the starting time to the pipe, and the parent will read from it following the termination of the child process.
 
-You will use the gettimeofday() function to record the current timestamp. This function is passed a pointer to a struct timeval object, which contains two members: tv sec and t usec. These represent the number of elapsed seconds and microseconds since January 1, 1970 (known as the UNIX EPOCH). The following code sample illustrates how this function can be used: 
+You will use the gettimeofday() function to record the current timestamp. This function is passed a pointer to a struct timeval object, which contains two members: tv_ sec and tv_usec. These represent the number of elapsed seconds and microseconds since January 1, 1970 (known as the UNIX EPOCH). The following code sample illustrates how this function can be used: 
 
 struct timeval current; 
 
 gettimeofday(&current,NULL); 
 
-// current.tv sec represents seconds 
+// current.tv_sec represents seconds 
 
-// current.tv usec represents microseconds 
+// current.tv_usec represents microseconds 
 
 For IPC between the child and parent processes, the contents of the shared memory pointer can be assigned the struct timeval representing the starting time. When pipes are used, a pointer to a struct timeval can be written to—and read from—the pipe.
 
