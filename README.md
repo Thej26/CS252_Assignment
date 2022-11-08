@@ -100,6 +100,10 @@ https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252
 
 ---
 
+Note: All the information written in this project repo is specific to Ubuntu operating system
+
+---
+
 # Author
 
 **[@Thej26](https://github.com/Thej26)**
