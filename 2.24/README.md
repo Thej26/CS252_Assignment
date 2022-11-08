@@ -12,9 +12,9 @@ For an Installation Guide, kindly check the References
 ## Compiling the File
 
 To compile the file, run the following command:
->  gcc -o copy_code copy_code.c
+>  gcc -o Filecopy Filecopy.c
 
-Here, copy_code is the name of the object file given by us, and copy_code.c is the file we're trying to compile.
+Here, Filecopy is the name of the object file given by us, and Filecopy.c is the file we're trying to compile.
 
 ---
 ## Using Strace
@@ -22,22 +22,22 @@ Here, copy_code is the name of the object file given by us, and copy_code.c is t
 Note: Strace works only on Linux Based Terminals, for installation guides kindly check the References
 
 We use strace as follows:
-> strace ./copy_code
+> strace ./Filecopy
 
 It'll output all of the system calls onto the terminal
 
 To store this raw terminal output, we can use the command:
-> strace -o log_raw.txt ./copy_code
+> strace -o log_raw.txt ./Filecopy
 
-The raw log terminal will now be saved as [log_raw.txt](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_2.24/log_raw.txt)
+The raw log terminal will now be saved as log_raw.txt
 
 Strace can also output the count number of system calls:
->strace -c ./copy_code
+>strace -c ./Filecopy
 
 Now we can export this terminal output to a file as follows:
-> strace -o log_table.txt -c ./copy_code
+> strace -o log_table.txt -c ./Filecopy
 
-This saves our tabular terminal output to a file named [log_table.txt](https://github.com/DevAgrawal04/OperatingSystems_Assignment_CS252/blob/main/Q_2.24/log_table.txt)
+This saves our tabular terminal output to a file named log_table.txt
 
 ---
 ## System Calls Description
