@@ -1,0 +1,123 @@
+IE-Sight - Mars Exploration Rover
+Thejaswi.N   ,Robotics sig IE
+thejaswi.201me159@nitk.edu.in
+
+
+Abstract
+This report ,on the IE-Sight mars exploration rover covers the planning ,computer assisted design ,analysis of a mars rover . 
+A mars rover is a humungous project developed to explore the Martian surface to perform various activities and tasks such as sample collection ,search for life ,study of terrain and weather etc. 
+Research will be done on various different rover designs and comparisons will be made between different designs for different parts of the rover .
+A basic design will be made and its working will be studied .The designs will then be simulated to understand the motion of the rover . 
+Various detectors will be used for the rover to detect the environment, be able to detect obstacles and move across rough terrains. 
+Although only a conceptual design, this report summarizes of all required design parameters for future rover development.
+
+
+INTRODUCTION
+Today Mars exploration is one of the most popular areas  of  research.  
+Different approaches are needed according  to  various  mission requirements. 
+Observation satellites can give us wide area cover, while surface landing probes give us more accurate details.  
+Mobile exploration vehicles allow achieving both, however it comes with higher expenditure. 
+The  mission that involves mobile rover is extremely costly and requires high reliability. 
+The designed rover must be capable of maintaining it’s speed on the terrain of mars as well as being able to function efficiently without errors and prevent any damage occurring to itself. 
+It should also be able to send back reports at regular intervals without any issues. 
+The electronics part of the rover would be equipped with specialized cameras, sensors, etc. in order to collect information about the red planet. 
+Efficient batteries and solar cells must also be equipped to maintain prolonged activity. T
+he main mechanical components of the model include, the frame (or chassis) , wheels, suspension, robotic arm, claw(for sampling) , motor, and some others. 
+Our goal is to develop an efficient rover design and simulate it. 
+
+
+
+OBJECTIVES
+1.To design the components of the rover including :
+•	Frame
+•	Suspension
+•	Robotic arm
+•	Wheel
+2.Assemble the model
+3.Provide joints, animate and simulate it in fusion 360
+4.Create a  urdf  file and correcting the errors in joints 
+5.Carry out structural analysis of wheels and frames
+
+DESIGN PROCESS
+1.Suspension & Wheel 
+Our model employs the rocker bogie suspension mechanism, which is one the most commonly used suspensions in mars rovers because of it’s ability to overcome tough terrains while maintaining stability. 
+It consists of two arms with wheel mounted to each. Both arms are connected through a movable joint. The "rocker" part of the suspension comes from the rocking aspect of the larger, body-mounted linkage on each side of the rover. 
+These rockers are connected to each other and the vehicle chassis through a differential. Relative to the chassis, the rockers will rotate in opposite directions to maintain approximately equal wheel contact. 
+The chassis maintains the average pitch angle of both rockers. One end of a rocker is fitted with a drive wheel, and the other end is pivoted to the bogie. 
+The "bogie" part of the suspension refers to the smaller linkage that pivots to the rocker in the middle and which has a drive wheel at each end.
+
+Rocker bogie suspension
+The rocker-bogie design has no springs or stub axles for each wheel, allowing the rover to climb over obstacles (such as rocks) that are up to twice the wheel's diameter in size while keeping all six wheels on the ground. 
+Rocker bogie system reduces the motion of the main vehicle body by half compared to other suspension systems. Each of the rover's six wheels has an independent motor. 
+The two front and two rear wheels have individual steering motors which allow the vehicle to turn in place.
+In order to go over a vertical obstacle face, the front wheels are forced against the obstacle by the center and rear wheels. 
+The rotation of the front wheel then lifts the front of the vehicle up and over the obstacle. 
+The middle wheel is then pressed against the obstacle by the rear wheels and pulled against the obstacle by the front until it is lifted up and over.
+Finally, the rear wheel is pulled over the obstacle by the front two wheels.
+During each wheel's traversal of the obstacle, forward progress of the vehicle is slowed or completely halted. 
+This is not an issue for the operational speeds at which these vehicles have been operated to date. 
+One of the major shortcomings of current rocker-bogie rovers is that they are slow. 
+If the rover hits an obstacle or goes over a large incline, rotation around the pivot that connects the rocker to the bogie risks tipping the rover. 
+Rocker-bogie mechanism has issues with singularity: when the suspension reaches a geometric position where the bogie is stuck, it renders the robot immobile.
+
+Wheels used in rover are made of aluminum with cleats for traction and curved titanium springs for support .
+The wheels should be designed appropriately to handle the weight of the rover and its electronic components and should be able to maintain it’s integrity and strength while travelling through the harsh surface of mars. 
+It should also be able to provide enough traction for the wheels to not slip and be able to climb over obstacles easily and stably.
+Wheel used in rovers
+
+2.Robotic Arm  &  Claw 
+One of the main goals of a Mars exploration rover is to study and analyze the atmospheric and soil condition. 
+In order to collect samples and probe the surface, a robotic arm has been installed on the rover. 
+This robotic arm can move a lot like a human’s arm. It has shoulder, elbow and wrist joints for maximum flexibility. 
+The arm uses scientific tools with it’s arm or turret to extract rock samples, cores, take microscopic images and analyze the elemental composition and mineral makeup of Martian rocks and soil. 
+
+Robotic arm   Claw or wrist for sampling
+The robotic arm has five degrees of freedom. They are made possible by tiny motors called "rotary actuators." 
+The five degrees of freedom are known as the shoulder azimuth joint, shoulder elevation joint, elbow joint, wrist joint and turret joint. 
+The turret at the end of the arm is like a hand that has cameras, chemical and mineral analyzers and a claw like structure for sampling and analyzing the terrain of Mars. 
+It also has a drill a dust removing tool and sensors provided in it for smooth operation 
+
+ASSEMBLY OF THE MODEL
+Fully assembled model of a Mars rover
+
+The above image is that of a fully assembled rover, including the suspensions, wheels, the differential that connects the two rocker-bogie suspension arms, the frame, arm used for sampling including the claw. 
+This model has been prepared using AutoCAD and Fusion360 designing software. 
+The proper joints have been provided at the required places for the smooth movement and functioning of the rover. 
+The correct material types have also been assigned to the different parts of the rover. 
+The model is then animated for motion of the wheels and the functioning of suspension. 
+The path of motion of the robotic arm is also animated and simulated. The motors of the individual wheels have also been included in the model. 
+The rover will also include a variety of electronic components such as panoramic cameras and navigation cameras, periscopes, spectrometers, imagers, for sampling and navigation. 
+It also has a powerful communication system to send and receive messages from earth, which is mounted on the frame. 
+The rover has rechargeable lithium ion batteries which run on solar power. These aspects of the rover will not be discussed about in this report. 
+
+
+STRUCTURAL ANALYSIS OF MODEL USING ANSYS
+Aluminum bottom plate
+
+The material used in the construction/making of the rover must be strong enough to resist the deformation and stress brought about due to the harsh Martian environment and must last long enough to carry out it’s purpose.
+Thus we have carried out the structural analysis of the bottom aluminum plate used in the rover using Ansys software. 
+Our purpose is to find out the maximum amount of the load the aluminum alloy plate can bear without undergoing significant deformation. 
+We carry out loading tests on both cases of fixed loading with sides fixed and bottom fixed.   
+Stress (bottom fixed)
+Strain (bottom fixed)
+Safety factor (bottom fixed)
+Total deformation (sides fixed)
+Stress (sides fixed)
+Safety factor (sides fixed)
+
+
+CONCLUSION
+Mars rover is a field of technology that is undergoing tremendous advancement at the present. 
+Our project on the design and simulation of a mars rover has been a small endeavor towards this. 
+The IE-Sight project has much future potential as the already existing model can be further improved through the use of better composites, more efficient designs with better features and more strength. 
+It’s electronic systems, sensors and such can be further developed, longer life and better communication systems can be installed. 
+In this project we have designed and simulated the basic assembly of the rover. 
+Further modifications can be carried out on the rover’s structure and more simulations can be done for better results. 
+The structural analysis can be extended to the entire body of the rover in order to get accurate readings and thus lead to a safer and stronger rover. 
+Overall the mars rover project has much room for growth.
+
+
+ACKNOWLEDGEMENT
+The author would like to thank IE robotics sig for providing an opportunity to learn about the designing and analysis of a rover. 
+It was a great opportunity to learn and gain knowledge. 
+I am also grateful for the references and resources provided to understand the topic more and use our knowledge effectively to help in the creation of conceptual design of the rover and it’s simulation.
