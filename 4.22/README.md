@@ -29,8 +29,7 @@
 - Each of these functions is operated by a distinct thread. 
 - The average function is executed by thread t1
 - The minimum function is executed by thread t2
-- The maximum function is executed by thread t3
-- The execution time in case of multi threading is then observed 
+- The maximum function is executed by thread t3 
 
 ---
 
